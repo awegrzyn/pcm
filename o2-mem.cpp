@@ -562,8 +562,9 @@ void display_bandwidth_csv(PCM *m, memdata_t *md, uint64 elapsedTime, const bool
              sysWriteDRAM += md->EDC_Wr_socket[skt];
 	 }
     }
-
-    cout << "memoryThroughput,unit=mbps value=" << sysReadDRAM+sysReadPMM+sysWriteDRAM+sysWritePMM << endl;
+    char hostname[255];
+    gethostname(hostname, 255);
+    cout << "memoryThroughput,unit=mbps,hostname=" << hostname << " value=" << sysReadDRAM+sysReadPMM+sysWriteDRAM+sysWritePMM << endl;
 }
 
 void calculate_bandwidth(PCM *m, const ServerUncorePowerState uncState1[], const ServerUncorePowerState uncState2[], uint64 elapsedTime, bool csv, bool & csvheader, uint32 no_columns, bool PMM, const bool show_channel_output)
