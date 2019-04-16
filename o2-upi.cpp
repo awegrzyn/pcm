@@ -319,7 +319,7 @@ const char * longDiv = "--------------------------------------------------------
             */
             for (uint32 i = 0; i < m->getNumSockets(); ++i)
             {
-                cout << " SKT   " << setw(2) << i << "     ";
+                //cout << " SKT   " << setw(2) << i << "     ";
                 for (uint32 l = 0; l < qpiLinks; ++l)
                     //cout << unit_format(getIncomingQPILinkBytes(i, l, sstate1, sstate2)) << "   ";
                     cout << "upiInThroughput,unit=bps,line=" << m->xPI() << l << ",socket=" << i << ",hostname=" << hostname << " value=" << getIncomingQPILinkBytes(i, l, sstate1, sstate2) << endl;
