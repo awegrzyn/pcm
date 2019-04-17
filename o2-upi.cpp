@@ -378,7 +378,7 @@ const char * longDiv = "--------------------------------------------------------
             }
 
             //cout << longDiv;
-            //cout << "qpiThroughput,unit=bps,interconnect=" << m->xPI() << ",hostname=" << hostname << " value=" << getAllOutgoingQPILinkBytes(sstate1, sstate2)<< endl;
+            cout << "qpiThroughput,unit=bps,interconnect=" << m->xPI() << ",hostname=" << hostname << " value=" << getAllOutgoingQPILinkBytes(sstate1, sstate2)<< endl;
         }
     }
     if (false/*show_socket_output*/)

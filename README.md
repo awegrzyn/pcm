@@ -10,8 +10,7 @@ It provides QPI and memory throughput formatted in Influx Line Protocol
 ./o2-mem.x 2>/dev/null
 ```
 
-### QPI:
+### UPI:
 ```
-./o2-qpi.x 2>/dev/null
+./o2-upi.x 2>/dev/null
 ```
->>>>>>> Provide memory and qpi throughput as ILP
